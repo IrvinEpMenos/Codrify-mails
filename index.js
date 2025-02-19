@@ -4,10 +4,14 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const port = 5000;
+const corsOptions = {
+    origin: "https://codrify.site/", // Reemplaza con la URL de tu sitio en Netlify
+    methods: "POST",
+    allowedHeaders: ["Content-Type"],
+};
 
 // Middlewares
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Configuración de Nodemailer
