@@ -1,0 +1,28 @@
+{
+  "name": "codrify-mails",
+  "version": "1.0.0",
+  "description": "repositorio para backend del sistema de reenvio para codrify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrvinEpMenos/Codrify-mails.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/IrvinEpMenos/Codrify-mails/issues"
+  },
+  "homepage": "https://github.com/IrvinEpMenos/Codrify-mails#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0"
+  }
+}
