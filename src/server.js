@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");  // ❌ Comentar o eliminar
 const bodyParser = require("body-parser");
 const emailRoutes = require("./routes/emailRoutes");
 require("dotenv").config();
@@ -8,12 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Middlewares
-const corsOptions = {
-    origin: "https://codrify.site", // Reemplaza con la URL de tu sitio en Netlify
-    methods: "POST",
-    allowedHeaders: ["Content-Type"],
-};
-app.use(cors(corsOptions));
+// app.use(cors()); // ❌ Eliminar o comentar para desactivar CORS
 app.use(bodyParser.json());
 
 // Routes
