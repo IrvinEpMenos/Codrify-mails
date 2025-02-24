@@ -1,10 +1,11 @@
 {
   "name": "codrify-mails",
   "version": "1.0.0",
-  "description": "repositorio para backend del sistema de reenvio para codrify",
-  "main": "index.js",
+  "description": "Repositorio para backend del sistema de reenvío para Codrify",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +23,11 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
