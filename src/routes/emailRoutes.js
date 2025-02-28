@@ -9,7 +9,7 @@ router.post("/send-email", (req, res) => {
 
     const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: ["21307007@utcgg.edu.mx"], // Destinatario
+        to: ["21307011@utcgg.edu.mx"], // Destinatario
         subject: `Nueva solicitud`,
         html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #058A8C; padding: 20px; border-radius: 8px; background-color: #050520; color: #fff;">
